@@ -12,5 +12,19 @@
  */
 
 return array(
-    // ...
+//    'assetic_configuration' => [ //настройки модуля assetic (загрузка клиентских файлов)
+//        'debug' => false,
+//        'cacheEnabled' => true,
+//        'cachePath' => __DIR__ . '/../../data/cache',
+//        'webPath' => __DIR__ . '/../../public/assets',//папка, куда assetic сохраняет клиентские файлы из всех модулей.
+//        'basePath' => 'assets',
+//        'routes' => [
+//            'home' => array(
+//                '@home_js',
+//            ),
+//        ],
+//        'acceptableErrors' => [
+//            'error-rbac',
+//        ],
+//    ]
 );
