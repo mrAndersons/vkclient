@@ -24,7 +24,7 @@ return array_merge(
             ),
         ),
         'translator' => array(
-            'locale' => 'en_US',
+            'locale' => 'ru_RU',
             'translation_file_patterns' => array(
                 array(
                     'type' => 'gettext',
@@ -62,34 +62,39 @@ return array_merge(
         ),
 
         // ASSETS
-        'assetic_configuration' => [
-            'default' => [
-                'assets' => [
-                    '@applic_css', '@applic_js'
-                ]
-            ],
-            'controllers' => [
-                IndexController::class => [
-                    '@applic_css', '@applic_js'
-                ]
-            ],
-            'modules' => [
-                'application' => [
-                    'root_path' => __DIR__ . '/../assets',
-                    'collections' => [
-                        'applic_css' => [
-                            'assets' => [
-                                'css/chat.css'
-                            ]
-                        ],
-                        'applic_js' => [
-                            'assets' => [
-                                'js/chat.js'
-                            ]
-                        ]
-                    ]
-                ]
-            ]
-        ]
+//        'assetic_configuration' => [
+//            'default' => [
+////                'assets' => [
+////                    '@applic_css', '@applic_js'
+////                ],
+//                'options' => [
+//                    'mixin' => true
+//                ],
+//            ],
+//            'controllers' => [
+//                IndexController::class => [
+//                    '@applic_css', '@applic_js'
+//                ]
+//            ],
+//            'modules' => [
+//                'application' => [
+//                    'root_path' => __DIR__ . '/../assets',
+//                    'collections' => [
+//                        'applic_css' => [
+//                            'assets' => [
+//                                'css/application.css'
+//                            ],
+//                            'options' => []
+//                        ],
+//                        'applic_js' => [
+//                            'assets' => [
+//                                'js/application.js'
+//                            ],
+//                            'options' => []
+//                        ]
+//                    ]
+//                ]
+//            ]
+//        ]
     ]
 );
