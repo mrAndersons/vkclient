@@ -15,10 +15,19 @@ namespace Messangers;
 return [
     'assetic_configuration' => [
         'debug' => true,
+        'default' => [
+            'options' => [
+                'mixin' => true
+            ],
+        ],
         'controllers' => [
             MessangersController::class => [
+                '@lib_scroll_css',
                 '@messangers_css',
-                '@messangers_js'
+
+                '@lib_scroll_js1',
+                '@lib_scroll_js2',
+                '@messangers_js',
             ]
         ],
 
@@ -26,6 +35,24 @@ return [
             'messangers' => [
                 'root_path' => __DIR__ . '/../assets',
                 'collections' => [
+                    // LIB
+                    'lib_scroll_css' => [
+                        'assets' => [
+                            'lib/css/jquery.jscrollpane.css',
+                        ]
+                    ],
+                    'lib_scroll_js1' => [
+                        'assets' => [
+                            'lib/js/jquery.jscrollpane.min.js',
+                        ]
+                    ],
+                    'lib_scroll_js2' => [
+                        'assets' => [
+                            'lib/js/jquery.mousewheel.js',
+                        ]
+                    ],
+
+                    // MODULE
                     'messangers_css' => [
                         'assets' => [
                             'css/messangers.css'

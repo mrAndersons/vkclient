@@ -60,41 +60,5 @@ return array_merge(
                 'routes' => array(),
             ),
         ),
-
-        // ASSETS
-//        'assetic_configuration' => [
-//            'default' => [
-////                'assets' => [
-////                    '@applic_css', '@applic_js'
-////                ],
-//                'options' => [
-//                    'mixin' => true
-//                ],
-//            ],
-//            'controllers' => [
-//                IndexController::class => [
-//                    '@applic_css', '@applic_js'
-//                ]
-//            ],
-//            'modules' => [
-//                'application' => [
-//                    'root_path' => __DIR__ . '/../assets',
-//                    'collections' => [
-//                        'applic_css' => [
-//                            'assets' => [
-//                                'css/application.css'
-//                            ],
-//                            'options' => []
-//                        ],
-//                        'applic_js' => [
-//                            'assets' => [
-//                                'js/application.js'
-//                            ],
-//                            'options' => []
-//                        ]
-//                    ]
-//                ]
-//            ]
-//        ]
     ]
 );
