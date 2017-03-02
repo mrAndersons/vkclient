@@ -38,17 +38,17 @@ return [
                     // LIB
                     'lib_scroll_css' => [
                         'assets' => [
-                            'lib/css/jquery.jscrollpane.css',
+                            'lib/scrollbar/css/jquery.jscrollpane.css',
                         ]
                     ],
                     'lib_scroll_js1' => [
                         'assets' => [
-                            'lib/js/jquery.jscrollpane.min.js',
+                            'lib/scrollbar/js/jquery.jscrollpane.min.js',
                         ]
                     ],
                     'lib_scroll_js2' => [
                         'assets' => [
-                            'lib/js/jquery.mousewheel.js',
+                            'lib/scrollbar/js/jquery.mousewheel.js',
                         ]
                     ],
 
